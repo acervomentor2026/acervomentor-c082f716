@@ -3,6 +3,7 @@ import { Calendar, MapPin, Clock, Laptop, Users, Sparkles, ArrowRight } from "lu
 import { Section, Card, CheckList, CtaBand, WHATSAPP } from "@/components/site";
 import op01 from "@/assets/op01.jpg.asset.json";
 import op03 from "@/assets/op03.jpg.asset.json";
+import foto from "@/assets/foto_paulo_sergio.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,37 +22,45 @@ const brl = (n: number) => n.toLocaleString("pt-BR", { style: "currency", curren
 function Index() {
   return (
     <>
-      <section className="bg-gradient-hero border-b border-border">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 md:grid-cols-[1.2fr_1fr] md:py-24">
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
-              <Sparkles className="h-3.5 w-3.5" /> Imersão presencial · 24h
+      <section className="relative isolate flex min-h-[calc(100svh-5rem)] items-center overflow-hidden border-b border-primary/20 bg-gradient-hero">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_75%_35%,oklch(0.62_0.16_235/0.26),transparent_42%),radial-gradient(ellipse_at_12%_90%,oklch(0.52_0.18_250/0.3),transparent_45%)]" />
+        <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 px-5 py-12 sm:px-8 md:grid-cols-[1.1fr_0.9fr] md:gap-4 md:py-16 lg:px-12">
+          <div className="relative z-10">
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
+              <Sparkles className="h-4 w-4" /> Acervo Mentor · Curso presencial
             </span>
-            <h1 className="mt-5 font-display text-4xl font-bold leading-tight md:text-6xl">
+            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Capacitação prática · 24 horas</p>
+            <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold leading-[1.05] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               Artefatos de Contratação <span className="text-gradient">com IA Vertical</span>
             </h1>
-            <p className="mt-5 text-lg text-muted-foreground">
-              Capacitação prática na elaboração de DFD, ETP, TR, Mapa e Matriz de Riscos, Requerimento, Motivação e Justificativa de Licitação e Contratação Direta — com curadoria de conhecimento, acervo especializado e Inteligência Artificial Vertical.
+            <p className="mt-5 max-w-2xl text-base leading-relaxed text-blue-50/90 sm:text-lg">
+              DFD, ETP, TR, Mapa e Matriz de Riscos, Requerimento, Motivação e Justificativa de Licitação e Contratação Direta — com curadoria de conhecimento, acervo especializado e Inteligência Artificial Vertical.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="rounded-full bg-gradient-primary px-7 py-3 font-semibold text-primary-foreground shadow-premium">Quero me inscrever</a>
-              <Link to="/metodologia" className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 font-semibold hover:bg-secondary">
-                Ver metodologia <ArrowRight className="h-4 w-4" />
+              <a href={WHATSAPP} target="_blank" rel="noreferrer" className="rounded-full bg-gradient-primary px-7 py-3.5 font-bold text-primary-foreground shadow-premium transition-transform hover:-translate-y-0.5">Inscreva-se pelo WhatsApp</a>
+              <Link to="/metodologia" className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 px-7 py-3.5 font-semibold text-white backdrop-blur transition-colors hover:bg-white/10">
+                Conheça a metodologia <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-            <div className="mt-10 grid gap-3 text-sm sm:grid-cols-3">
+            <div className="mt-9 grid gap-3 text-sm sm:grid-cols-2 xl:grid-cols-3">
               {[
-                { i: Calendar, t: "1º, 2 e 3 dez 2026" },
+                { i: Calendar, t: "1, 2 e 3 de dezembro de 2026" },
                 { i: MapPin, t: "Salvador – Bahia" },
                 { i: Clock, t: "8h–12h · 13h30–17h30" },
+                { i: Laptop, t: "Notebook obrigatório" },
+                { i: Users, t: "Mentoria virtual" },
               ].map(({ i: I, t }) => (
-                <div key={t} className="flex items-center gap-2 rounded-xl border border-border bg-card/60 px-3 py-2.5">
-                  <I className="h-4 w-4 text-primary" /> {t}
+                <div key={t} className="flex items-center gap-2 rounded-xl border border-white/15 bg-blue-950/45 px-3 py-3 text-blue-50 shadow-sm backdrop-blur">
+                  <I className="h-4 w-4 shrink-0 text-cyan-200" /> <span>{t}</span>
                 </div>
               ))}
             </div>
           </div>
-          <img src={op03.url} alt="Cartaz do treinamento prático em artefatos de contratação" className="mx-auto w-full max-w-sm rounded-3xl border border-border shadow-premium" />
+          <div className="relative mx-auto flex w-full max-w-xl items-center justify-center md:justify-end">
+            <div aria-hidden="true" className="absolute inset-6 rounded-full bg-cyan-400/15 blur-3xl" />
+            <div className="absolute inset-x-8 inset-y-4 rounded-[48%_48%_28px_28px] border border-amber-200/70 bg-gradient-to-br from-blue-300/10 to-cyan-400/5 shadow-[0_0_70px_oklch(0.7_0.15_220/0.16)]" />
+            <img src={foto.url} alt="Professor Paulo Sérgio Gomes da Silva" className="relative z-10 max-h-[72svh] w-full max-w-md rounded-[48%_48%_24px_24px] border-2 border-amber-200/80 object-cover object-top opacity-75 shadow-premium sm:max-h-[78svh] md:rounded-[48%_48%_28px_28px]" />
+          </div>
         </div>
       </section>
 
