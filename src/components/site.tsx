@@ -15,7 +15,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-5 md:h-24">
-        <Link to="/" className="shrink-0 font-display text-2xl font-bold leading-[1.02] tracking-tight md:text-3xl">
+        <Link to="/" className="shrink-0 font-display text-3xl font-bold leading-[1.02] tracking-tight md:text-4xl">
           <span className="block text-gradient">Acervo</span>
           <span className="block">Mentor</span>
         </Link>
