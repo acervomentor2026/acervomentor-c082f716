@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Acervomentor
+
+Crie um site, seguindo esse modelo de layout e identidade visual: https://professorerivaldo.lovable.app/ trata-se de um projeto de curso, inclua abas de navegação com apenas 3 páginas no total para inserir conteúdos, utilize as imagens em anexo, o conteúdo do site segue abaixo:
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://acervomentor.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/73c033ca-b202-43f0-a727-c9c989b5a5a8).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
