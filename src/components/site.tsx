@@ -15,8 +15,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between gap-4 px-5 md:h-24">
-        <Link to="/" className="shrink-0 font-display text-3xl font-bold leading-none tracking-tight md:text-4xl">
-          <span className="text-gradient">Acervo</span> Mentor
+        <Link to="/" className="shrink-0 font-display text-3xl font-bold leading-[1.02] tracking-tight md:text-4xl">
+          <span className="block text-gradient">Acervo</span>
+          <span className="block">Mentor</span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {nav.map((n) => (
@@ -56,7 +57,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-card/40">
       <div className="mx-auto grid max-w-6xl gap-6 px-5 py-10 text-sm text-muted-foreground md:grid-cols-3">
         <div>
-          <p className="font-display text-2xl font-bold text-foreground md:text-3xl"><span className="text-gradient">Acervo</span> Mentor</p>
+          <p className="font-display text-xl font-bold leading-[1.05] text-foreground md:text-2xl"><span className="block text-gradient">Acervo</span><span className="block">Mentor</span></p>
           <p className="mt-2">Capacitação prática em artefatos de contratação com IA Vertical.</p>
         </div>
         <div>
