@@ -48,7 +48,6 @@ function Professor() {
             <p className="mt-3 font-semibold">Formação acadêmica</p>
             <div className="mt-3 text-sm"><CheckList items={[
               "Bacharel em Administração de Empresas pela FAP – Faculdade Piemonte, diploma registrado na UFBA.",
-              "Pré-MBA em Inteligência Artificial para Negócios pela EXAME Educação e Saint Paul Escola de Negócios.",
             ]} /></div>
           </Card>
           <Card>
