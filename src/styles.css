@@ -105,6 +105,11 @@
 }
 
 @layer base {
+  /* Oculta o selo Lovable injetado na página publicada */
+  #lovable-badge {
+    display: none !important;
+  }
+
   * {
     border-color: var(--color-border);
   }
