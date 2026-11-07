@@ -29,7 +29,7 @@ function Index() {
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.18em] text-primary">
               <Sparkles className="h-4 w-4" /> Acervo Mentor · Curso presencial
             </span>
-            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Capacitação prática · 24 horas</p>
+            <p className="mt-6 text-sm font-semibold uppercase tracking-[0.22em] text-cyan-200">Capacitação prática · 24 horas - 7 dias por semana</p>
             <h1 className="mt-3 max-w-3xl font-display text-4xl font-bold leading-[1.05] text-white sm:text-5xl lg:text-6xl xl:text-7xl">
               Artefatos de Contratação <span className="text-gradient">com IA Vertical</span>
             </h1>
